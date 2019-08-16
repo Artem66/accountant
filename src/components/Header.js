@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import Clock from './Clock/';
 
 class Header extends Component {
   render () {
@@ -23,6 +24,7 @@ class Header extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
+              <Clock />
               <Nav.Link href="#deets">Войти</Nav.Link>
               <Nav.Link eventKey={ 2 } href="#memes">
                 Регистрация

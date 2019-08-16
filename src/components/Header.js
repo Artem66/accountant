@@ -11,9 +11,10 @@ class Header extends Component {
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
+              <Nav.Link href="/">Главная</Nav.Link>
               <Nav.Link href="/about/">О нас</Nav.Link>
               <Nav.Link href="#pricing">Цены</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown title="Нормативы" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -22,9 +23,9 @@ class Header extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link href="#deets">Войти</Nav.Link>
               <Nav.Link eventKey={ 2 } href="#memes">
-                Dank memes
+                Регистрация
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

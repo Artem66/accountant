@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Clock from './Clock/';
+import Clock from './Clock/Index';
 
 class Header extends Component {
+  handleClick = () => {
+    console.log('this', this);
+  }
   render () {
     return (
         <>
@@ -25,7 +28,7 @@ class Header extends Component {
             </Nav>
             <Nav>
               <Clock />
-              <Nav.Link href="#deets">Войти</Nav.Link>
+              <Nav.Link href="#deets" onClick={ this.handleClick }>Войти</Nav.Link>
               <Nav.Link eventKey={ 2 } href="#memes">
                 Регистрация
               </Nav.Link>

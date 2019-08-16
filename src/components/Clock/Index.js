@@ -5,7 +5,7 @@ export default class Clock extends Component {
   constructor(props){
     super(props);
     this.state = { 
-      date: new Date
+      date: new Date()
     };
   }
   componentDidMount() {
@@ -20,7 +20,7 @@ export default class Clock extends Component {
 
   tick() {
     this.setState ({
-      date: new Date
+      date: new Date()
     });
   }
   render() {

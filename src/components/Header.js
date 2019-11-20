@@ -29,7 +29,7 @@ class Header extends Component {
             <Nav>
               <Clock />
               <Nav.Link href="#deets" onClick={ this.handleClick }>Войти</Nav.Link>
-              <Nav.Link eventKey={ 2 } href="#memes">
+              <Nav.Link eventKey={ 2 } href="/registration/">
                 Регистрация
               </Nav.Link>
             </Nav>

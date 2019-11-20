@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import FirstSlide from '../img/sl-1.png';
-import { Container, Row, Carousel } from 'react-bootstrap';
+import { Container, Row, Carousel, Col } from 'react-bootstrap';
 
-export default class Home extends Component {
+export default class Home extends Component {  
   render () {
     return(
       <Container>
         <Row>
-          <Carousel style={ {marginTop:10} }>
+          <Carousel className="Mt-5">
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -43,7 +43,12 @@ export default class Home extends Component {
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </Carousel.Caption>
             </Carousel.Item>
-          </Carousel>
+          </Carousel>          
+        </Row>
+        <Row>
+          <Col className="Mt-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </Col>
         </Row>
       </Container>
     );
